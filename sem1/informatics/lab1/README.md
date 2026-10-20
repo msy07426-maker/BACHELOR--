@@ -57,7 +57,7 @@
 
 Вычислить значения выражений с использованием унарных операций инкремента и декримента:
 
-1. `n++ \* ++m`
+1. `n++ * ++m`
 
 2. `--m < n--`
 
@@ -103,9 +103,9 @@
 
 ```cpp
 
-\#include <iostream>
+#include <iostream>
 
-\#include <cmath>
+#include <cmath>
 
 
 
@@ -129,27 +129,27 @@ using namespace std;
 
 int main() {
 
-&#x20;   float a\_f = 1000.0f;
+&#x20;   float a_f = 1000.0f;
 
-&#x20;   float b\_f = 0.0001f;
-
-
-
-&#x20;   float part1\_f = pow(a\_f - b\_f, 5);
-
-&#x20;   float part2\_f = pow(a\_f, 5) - 5 \* pow(a\_f, 4) \* b\_f;
-
-&#x20;   float numerator\_f = part1\_f - part2\_f;
+&#x20;   float b_f = 0.0001f;
 
 
 
-&#x20;   float denominator\_f = -10 \* pow(a\_f, 3) \* pow(b\_f, 2) + 10 \* pow(a\_f, 2) \* pow(b\_f, 3) - 5 \* a\_f \* pow(b\_f, 4) + pow(b\_f, 5);
+&#x20;   float part1_f = pow(a_f - b_f, 5);
 
-&#x20;   float result\_float = numerator\_f / denominator\_f;
+&#x20;   float part2_f = pow(a_f, 5) - 5 * pow(a_f, 4) * b_f;
+
+&#x20;   float numerator_f = part1_f - part2_f;
 
 
 
-&#x20;   cout << "Result with FLOAT:  " << result\_float << endl;
+&#x20;   float denominator_f = -10 * pow(a_f, 3) * pow(b_f, 2) + 10 * pow(a_f, 2) * pow(b_f, 3) - 5 * a_f * pow(b_f, 4) + pow(b_f, 5);
+
+&#x20;   float result_float = numerator_f \ denominator_f;
+
+
+
+&#x20;   cout << "Result with FLOAT:  " << result_float << endl;
 
 ```
 
@@ -167,27 +167,27 @@ int main() {
 
 ```cpp
 
-&#x20;   double a\_d = 1000.0;
+&#x20;   double a_d = 1000.0;
 
-&#x20;   double b\_d = 0.0001;
-
-
-
-&#x20;   double part1\_d = pow(a\_d - b\_d, 5);
-
-&#x20;   double part2\_d = pow(a\_d, 5) - 5 \* pow(a\_d, 4) \* b\_d;
-
-&#x20;   double numerator\_d = part1\_d - part2\_d;
+&#x20;   double b_d = 0.0001;
 
 
 
-&#x20;   double denominator\_d = -10 \* pow(a\_d, 3) \* pow(b\_d, 2) + 10 \* pow(a\_d, 2) \* pow(b\_d, 3) - 5 \* a\_d \* pow(b\_d, 4) + pow(b\_d, 5);
+&#x20;   double part1_d = pow(a_d - b_d, 5);
 
-&#x20;   double result\_double = numerator\_d / denominator\_d;
+&#x20;   double part2_d = pow(a_d, 5) - 5 * pow(a_d, 4) * b_d;
+
+&#x20;   double numerator_d = part1_d - part2_d;
 
 
 
-&#x20;   cout << "Result with DOUBLE: " << result\_double << endl;
+&#x20;   double denominator_d = -10 * pow(a_d, 3) * pow(b_d, 2) + 10 * pow(a_d, 2) * pow(b_d, 3) - 5 * a_d * pow(b_d, 4) + pow(b_d, 5);
+
+&#x20;   double result_double = numerator_d \ denominator_d;
+
+
+
+&#x20;   cout << "Result with DOUBLE: " << result_double << endl;
 
 ```
 
@@ -197,7 +197,7 @@ int main() {
 
 
 
-\---
+---
 
 
 
@@ -209,11 +209,11 @@ int main() {
 
 
 
-&#x20;   // Выражение 1: n++ \* ++m
+&#x20;   // Выражение 1: n++ * ++m
 
-&#x20;   int res1 = n++ \* ++m;
+&#x20;   int res1 = n++ * ++m;
 
-&#x20;   cout << "1) n++ \* ++m = " << res1 << " (After: n=" << n << ", m=" << m << ")" << endl;
+&#x20;   cout << "1) n++ * ++m = " << res1 << " (After: n=" << n << ", m=" << m << ")" << endl;
 
 ```
 
@@ -223,7 +223,7 @@ int main() {
 
 
 
-\---
+---
 
 
 
@@ -245,7 +245,7 @@ int main() {
 
 
 
-\---
+---
 
 
 

@@ -11,19 +11,19 @@ int main()
     cout << "--- Task 1: Precision Test ---" << std::endl;
 
     // المعطيات الثابتة من السؤال للخيار 28
-       double a_d = 1000.0;
+    double a_d = 1000.0;
     double b_d = 0.0001;
 
     float a_f = 1000.0f;
     float b_f = 0.0001f;
 
     // الحساب باستخدام نوع البيانات double 
-       double num_d = pow(a_d - b_d, 5) - (pow(a_d, 5) - 5.0 *pow(a_d, 4) * b_d);
+    double num_d = pow(a_d - b_d, 5) - (pow(a_d, 5) - 5.0 *pow(a_d, 4) * b_d);
     double den_d = -10.0 *pow(a_d, 3) *pow(b_d, 2) + 10.0 *pow(a_d, 2) *pow(b_d, 3) - 5.0 * a_d *pow(b_d, 4) + pow(b_d, 5);
     double result_double = num_d / den_d;
 
     // الحساب باستخدام نوع البيانات float 
-       float num_f = pow(a_f - b_f, 5) - (pow(a_f, 5) - 5.0f *pow(a_f, 4) * b_f);
+    float num_f = pow(a_f - b_f, 5) - (pow(a_f, 5) - 5.0f *pow(a_f, 4) * b_f);
     float den_f = -10.0f *pow(a_f, 3) *pow(b_f, 2) + 10.0f * pow(a_f, 2) * pow(b_f, 3) - 5.0f * a_f * pow(b_f, 4) + pow(b_f, 5);
     float result_float = num_f / den_f;
 
